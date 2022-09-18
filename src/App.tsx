@@ -1,10 +1,14 @@
-import React from 'react';
+import React, { useState} from 'react';
+import { Product } from './components/Product';
+import {products} from "./data/products";
+
 
 function App() {
+  
   return (
-    <div className='conatiner'>
-      <h1 className='font-bold'>Hello</h1>
-      <button>Click me!</button>
+    <div className='container mx-auto max-w-2xl pt-100'> 
+      <Product product={products[0]}/>
+      <Product product={products[1]}/>
     </div>
   );
 }
